@@ -1,0 +1,14 @@
+﻿@page "/"
+@using Microsoft.FluentUI.AspNetCore.Components
+
+<PageTitle>Home</PageTitle>
+
+<h1>Hello, world!</h1>
+
+Welcome to your new app.
+
+<FluentButton @onclick=@AddCount Appearance="Appearance.Accent">Add Count: @count</FluentButton>
+@code {
+    int count = 0;
+    void AddCount() => count++;
+}
